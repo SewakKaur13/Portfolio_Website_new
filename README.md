@@ -1,19 +1,40 @@
-# Hailee portfolio webpage
+Portfolio Website
+This is a personal portfolio website showcasing my skills, projects, and achievements. It features dynamic data fetching from a backend, light and dark modes, animations, and responsive design.
 
-A portfolio web site completely made in html css and js from ground up.
+Features
+Light and Dark Modes: Toggle between light and dark themes for a customizable user experience.
 
-#### Watch it live here - [hailee.netlify.app](https://hailee.netlify.app/)
+Dynamic Data Fetching: The website fetches data dynamically from a backend API built with Node.js, Express, Sequelize, and PostgreSQL.
 
-<br>
+Animations and Transitions: Smooth animations and transitions for a more engaging user experience.
 
-## This is how it looks
+Responsive Design: Optimized for all screen sizes, ensuring a seamless experience on desktop and mobile devices.
 
-<br>
+Backend Integration: The portfolio dynamically loads project data, contact details, and other information via RESTful APIs.
 
-### In dark mode
+Technologies Used
+Frontend:
 
-![In dark mode](./preview/hailee-dark.png)
+HTML, CSS, JavaScript (ES6+)
 
-### In light mode
+React (for UI components and state management)
 
-![In light mode](./preview/hailee-light.png)
+CSS Animations & Transitions
+
+React Router (for navigation)
+
+Backend:
+
+Node.js & Express.js
+
+Sequelize ORM for database interactions
+
+PostgreSQL (for data storage)
+
+Others:
+
+Dark Mode / Light Mode Toggle
+
+API integration for dynamic content fetching
+
+Responsive Design using Flexbox & Grid Layouts
