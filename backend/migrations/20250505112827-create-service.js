@@ -17,6 +17,10 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false 
       },
+      bulletPoints:{
+        type:Sequelize.ARRAY(Sequelize.STRING),
+        allowNull: false
+      },
       user_id: {
         type: Sequelize.INTEGER,
         allowNull: false,

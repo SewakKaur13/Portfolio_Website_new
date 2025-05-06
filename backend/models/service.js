@@ -23,6 +23,7 @@ module.exports = (sequelize, DataTypes) => {
   Service.init({
     title: DataTypes.STRING,
     description: DataTypes.TEXT,
+    bulletPoints:DataTypes.ARRAY(DataTypes.STRING),
     user_id: DataTypes.INTEGER
   }, {
     sequelize,

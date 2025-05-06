@@ -10,11 +10,11 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       type: {
-        type: Sequelize.ENUM('frontend', 'backend'),
+        type: Sequelize.ENUM('frontend', 'backend', 'tools', 'framework', 'database'),
         allowNull: false
       },
-      skill_name: {
-        type: Sequelize.STRING,
+      skill_names: {
+        type: Sequelize.ARRAY(Sequelize.STRING),
         allowNull: false
       },
       user_id: {
@@ -24,7 +24,7 @@ module.exports = {
           model: 'UserProfiles',
           key: 'id'
         },
-        onDelete: 'CASCADE', 
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,
@@ -40,7 +40,9 @@ module.exports = {
       }
     });
   },
+
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('Skills');
+    await queryInterface.sequelize.query(`DROP TYPE IF EXISTS "enum_Skills_type";`);
   }
 };

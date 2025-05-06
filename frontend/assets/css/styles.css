@@ -330,6 +330,7 @@ body.light-theme {
 
 .home__img {
   width: 160px;
+  border-radius: 50%;
 }
 
 .home__handle {
