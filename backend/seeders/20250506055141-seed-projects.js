@@ -5,8 +5,9 @@ module.exports = {
     await queryInterface.bulkInsert('Projects', [
       {
         name: 'Symbiotic Growth Initiative',
-        image_url: 'https://example.com/symbiotic-growth.jpg',
-        github_link: 'https://github.com/yourusername/symbiotic-growth',
+        image_url: '/GreenMind.gif',
+        github_link: 'https://github.com/SewakKaur13/GreenMind',
+        project_type: 'Web',
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -14,8 +15,9 @@ module.exports = {
       },
       {
         name: 'Memory Card Game',
-        image_url: 'MemoryGame.png',
-        github_link: 'https://sewakkaur13.github.io/MemoryCardGame/',
+        image_url: '/MemoryCardGame.gif',
+        github_link: 'https://github.com/SewakKaur13/MemoryCardGame',
+        project_type: 'Web',
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -23,8 +25,9 @@ module.exports = {
       },
       {
         name: 'Happy Diwali Card',
-        image_url: '/DiwaliCard.png',
-        github_link: 'https://sewakkaur13.github.io/DiwaliCard/',
+        image_url: '/DiwaliCard.gif',
+        github_link: 'https://github.com/SewakKaur13/DiwaliCard',
+        project_type: 'Web',
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date(),

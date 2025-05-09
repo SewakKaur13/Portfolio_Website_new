@@ -15,8 +15,11 @@ module.exports = {
       whatsapp_no: {
         type: Sequelize.STRING
       },
-      twitter_link: {
+      linkedin_link: {
         type: Sequelize.TEXT
+      },
+      github_link:{
+        type:Sequelize.TEXT
       },
       user_id: {
         type: Sequelize.INTEGER,

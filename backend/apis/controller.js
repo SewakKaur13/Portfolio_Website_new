@@ -1,4 +1,6 @@
 const { getUserDetailsModel } = require("./model");
+const { postMessageService } = require('./service');
+
 
 const getUserDetailsController = async (req, res) => {
   try {
@@ -20,4 +22,14 @@ const getUserDetailsController = async (req, res) => {
   }
 };
 
-module.exports = { getUserDetailsController };
+const postMessageController = async(req,res)=>{
+  try {
+    const data=req?.body;
+    await postMessageService(data)
+    res.status(200).json({ success: true, message: 'Message sent successfully' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message || "Server error" });
+  }
+}
+
+module.exports = { getUserDetailsController,postMessageController };

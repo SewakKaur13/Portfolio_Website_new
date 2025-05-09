@@ -18,6 +18,9 @@ module.exports = {
       github_link: {
         type: Sequelize.TEXT
       },
+      project_type:{
+        type: Sequelize.TEXT
+      },
       user_id: {
         type: Sequelize.INTEGER,
         references: {

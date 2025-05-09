@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
   Contact.init({
     email: DataTypes.STRING,
     whatsapp_no: DataTypes.STRING,
-    twitter_link: DataTypes.TEXT,
+    linkedin_link: DataTypes.TEXT,
+    github_link: DataTypes.TEXT,
     user_id: DataTypes.INTEGER
   }, {
     sequelize,

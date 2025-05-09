@@ -10,10 +10,20 @@ const axiosInstance = axios.create({
 
 // Method to get profile data
 export const getProfileData = () => {
-    return axiosInstance.get('get-user-profile/1')  // Using the correct endpoint for fetching the profile data
-        .then(response => response.data)  // Return the data from the API response
+    return axiosInstance.get('get-user-profile/1') 
+        .then(response => response.data)  
         .catch(error => {
             console.error('Error fetching data:', error);
-            throw error;  // Re-throw the error to handle it in the calling function
+            throw error; 
+        });
+};
+
+// Method to post a message
+export const sendMessage = (messageData) => {
+    return axiosInstance.post('post-message', messageData)
+        .then(response => response.data)
+        .catch(error => {
+            console.error('Error sending message:', error);
+            throw error;
         });
 };

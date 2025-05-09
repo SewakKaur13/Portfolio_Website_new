@@ -6,7 +6,8 @@ module.exports = {
       {
         email: 'bhumikrishnani211@gmail.com',
         whatsapp_no: '9277955152',
-        twitter_link: 'https://twitter.com/bhumi_krishnani',
+        linkedin_link: 'https://www.linkedin.com/in/bhumi-krishnani-452082293/',
+        github_link:'https://github.com/SewakKaur13',
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date(),

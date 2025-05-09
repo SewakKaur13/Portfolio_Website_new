@@ -262,6 +262,8 @@ body.light-theme {
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 1 rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -549,6 +551,9 @@ body.light-theme {
   margin-bottom: 2.5rem;
 }
 
+
+
+
 .services__button {
   color: var(--first-color);
   font-size: var(--small-font-size);
@@ -598,6 +603,7 @@ body.light-theme {
   color: var(--first-color);
   margin-bottom: 1rem;
 }
+
 
 .services__modal-description {
   font-size: var(--small-font-size);
@@ -770,6 +776,10 @@ body.light-theme {
 .contact__card-title,
 .contact__card-data {
   font-size: var(--small-font-size);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .contact__card-title {
@@ -860,11 +870,14 @@ body.light-theme {
 
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 1.5rem;
   margin-bottom: 2rem;
+  row-gap: 1rem; 
 }
+
 
 .footer__social {
   display: flex;
@@ -948,9 +961,12 @@ body.light-theme {
   }
 
   .services__container {
-    grid-template-columns: 145px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); 
+    justify-content: center; 
+    gap: 20px;
   }
+  
 
   .work__item {
     font-size: var(--small-font-size);
