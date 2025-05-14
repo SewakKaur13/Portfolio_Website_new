@@ -73,8 +73,31 @@ As the lead developer of this project, my responsibilities included:
 
 ## 📝 How to Use
 
+### Frontend Setup:
+
 1. Clone this repository to your local machine.
-2. Run the frontend locally with:
+2. Navigate to the **docs** directory(frontend directory it is).
+3. Open the project in **VS Code** or any other code editor.
+4. Run the following command to start the frontend using **Live Server**:
    ```bash
    npm install
+   npm start
+
+### Backend Setup:
+
+1. Navigate to the **backend** directory
+2. Run the following command to install the required dependencies:
+   ```bash
+   npm install
+3. Set up the PostgreSQL database:
+   Create a PostgreSQL database for the project.
+   Update the database connection details in the config file (config/config.js).
+4. Run the migrations to set up the database schema:
+   ```bash
+   npx sequelize db:migrate
+5. Seed the database with initial data:
+   ```bash
+   npx sequelize db:seed:all
+6. Start the backend server:
+   ```bash
    npm start
