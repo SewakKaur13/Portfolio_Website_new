@@ -4,6 +4,16 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Projects', [
       {
+        name: 'Pizza Application',
+        image_url: '/PizzaApplication.gif',
+        github_link: 'https://github.com/SewakKaur13/Pizza-Application',
+        project_type: 'Web',
+        user_id: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        deletedAt: null
+      },
+      {
         name: 'Symbiotic Growth Initiative',
         image_url: '/GreenMind.gif',
         github_link: 'https://github.com/SewakKaur13/GreenMind',

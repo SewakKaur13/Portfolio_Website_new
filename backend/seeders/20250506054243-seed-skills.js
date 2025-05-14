@@ -5,7 +5,7 @@ module.exports = {
     await queryInterface.bulkInsert('Skills', [
       {
         type: 'frontend',
-        skill_names: ['HTML', 'CSS', 'JavaScript', 'React.js', 'GSAP'],
+        skill_names: ['HTML', 'CSS', 'JavaScript', 'Tailwind Css', 'GSAP'],
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date()
@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         type: 'database',
-        skill_names: ['MongoDB', 'PgAdmin', 'SQL'],
+        skill_names: ['MongoDB', 'PgAdmin', 'SQL', 'Firebase'],
         user_id: 1,
         createdAt: new Date(),
         updatedAt: new Date()
